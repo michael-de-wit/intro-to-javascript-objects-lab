@@ -159,3 +159,21 @@ Exercise 9
 
 Solve Exercise 9 here:
 */
+
+// console.log(pokemon)
+
+console.log(`\n\nE9 start Pokemon list: \n`)
+
+for(index = 0; index < pokemon.length; index++) { // Go through the Pokemon array
+    let pokemonObject = pokemon[index] // Isolate each Pokemon object
+    pokemonStarterStatus = pokemonObject.starter // Extract the starter status of each Pokemon
+
+    if(pokemonStarterStatus === true) { // Check if the starter status is true; act if true
+        let pokemonName = pokemonObject.name // Extract the starter Pokemon name
+        console.log(pokemonName) // log the starter Pokemon name
+    }
+
+    // console.log(pokemonStarterStatus) 
+}
+
+//Exercise 10
