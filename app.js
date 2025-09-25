@@ -177,3 +177,40 @@ for(index = 0; index < pokemon.length; index++) { // Go through the Pokemon arra
 }
 
 //Exercise 10
+/*
+Exercise 10
+Create a method called `catchPokemon` and add it to the `game` object. You should not need to edit the original game object directly. This method should:
+  - Accept an object as a parameter called `pokemonObj`
+  - Add the `pokemonObj` to the `game.party` array.
+  - not return anything
+
+After writing this method, call it and pass in a Pokemon object of your choice from the `pokemon` data to catch it.
+
+Solve Exercise 10 here:
+*/
+
+// console.log(game)
+
+function extractPokemonObj(pokemonNumber) { // function to extract the Pokemon object given the Pokemon number as the param
+    pokemonIndex = pokemonNumber - 1 // convert Pokemon number to its index in the pokemon array
+    pokemonObjExtract = pokemon[pokemonIndex] // extract the given Pokemon object
+    return pokemonObjExtract // return the given Pokemon object
+}
+
+// console.log(extractPokemonObj(150))
+
+game.catchPokemon = function(pokemonObj) { // create the catchPokemon method in the game object
+    game.party.push(pokemonObj) // add the pokemon object to the game party array
+
+}
+
+console.log(`\n\nstate as of e10:\n`)
+
+extractedPokemonObjGlobal = extractPokemonObj(150) // get the object for 150 Mewtwo
+// console.log(extractedPokemonObjGlobal)
+game.catchPokemon(extractedPokemonObjGlobal) // add 150 Mewtwo to the game party array
+console.log(game)
+
+// game.catchPokemon(150)
+
+//Exercise 11
