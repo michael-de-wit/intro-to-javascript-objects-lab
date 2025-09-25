@@ -106,3 +106,28 @@ for(let index = 0; index < gymsArray.length; index++) { //go through the gyms ar
 console.log(`game state as of exercise 6: `, game)
 
 //Exercise 7
+/*
+Exercise 7
+1. Evolve the starter Pokémon you added to your party earlier. Each starter Pokémon evolves into a specific one.
+2. How would you replace the current starter Pokémon in your party with its evolved form?
+
+Hint: 
+  - Pokemon 1: Bulbasaur evolves into Pokemon 2: Ivysaur
+  - Pokemon 4: Charmander evolves into Pokemon 5: Charmeleon
+  - Pokemon 7: Squirtle evolves into Pokemon 8: Wartortle
+  - Pokemon 25: Pikachu evolves into Pokemon 26: Raichu
+
+More Hints: The existing starter Pokemon will be *replaced* in your party with the Pokemon it evolved into. When working with an array of objects, the splice() array method is ideal for replacing one element with another. 
+
+
+Solve Exercise 7 here:
+*/
+
+// console.log(game)
+let partyArray = game.party //Extract the party array
+let evolveToPokemonObject = pokemon[1] // create var with Ivysaur (number 2, index 1), Bulbasaur's evolve-to Pokemon
+// console.log(evolveToPokemonObject)
+partyArray.splice(0,1,evolveToPokemonObject) // replace Bulbasaur with Ivysaur
+console.log('\n\n state as of E7: \n\n',game)
+
+//Exercise 8
