@@ -131,3 +131,31 @@ partyArray.splice(0,1,evolveToPokemonObject) // replace Bulbasaur with Ivysaur
 console.log('\n\n state as of E7: \n\n',game)
 
 //Exercise 8
+/*
+Exercise 8
+1. Print the name of each Pokémon in your party.
+2. Consider using a loop or an array method to access each Pokémon's name.
+
+Solve Exercise 8 here:
+*/
+
+// console.log(partyArray)
+
+console.log(`\nE8 party Pokemon list:`)
+
+for(index = 0; index < partyArray.length; index++) { // Go through the partyArray
+    // console.log(partyArray[index])
+    let partyPokemonObject = partyArray[index] // Isolate each party Pokemon object
+    let partyPokemonName = partyPokemonObject.name // Extract the name of the party Pokemon
+    console.log(partyPokemonName) // Log the party Pokemon name
+}
+
+//Exercise 9
+/*
+Exercise 9
+1. Can you print out all the starter Pokémon from the `pokemon` array?
+2. Think about how you can identify a starter Pokémon and then log their names.
+
+
+Solve Exercise 9 here:
+*/
