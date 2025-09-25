@@ -30,7 +30,7 @@ pokemon59Name = pokemon59Object.name // Create var for the name of Pokemon 59
 console.log(pokemon59Name) // Log name of Pokemon 59: Arcanine
 
 //Exercise 2
-console.log(game)
+console.log(`initial game state: `, game)
 
 //Exercise 3
 /*
@@ -58,6 +58,51 @@ Solve Exercise 4 here:
 bulbasaurObject = pokemon[0] // choose Bulbasar
 // console.log(bulbasaurObject)
 game.party.push(bulbasaurObject)
-console.log(game)
+// console.log(game)
 
 //Exercise 5
+/*
+Exercise 5
+1. Choose three more Pokémon from the `pokemon` array and add them to your party.
+2. Consider different attributes like 'type' or 'HP' for your selection. Which array method will you use to add them?
+
+
+Solve Exercise 5 here:
+*/
+
+function addPartyMember(pokemonNumber) { // function to add a pokemon to the party; takes the Pokemon's number as param
+    pokemonIndex = pokemonNumber - 1
+    partyMemberObject = pokemon[pokemonIndex]
+    game.party.push(partyMemberObject)
+}
+
+addPartyMember(18) // Add Pidgeot to party
+addPartyMember(65) // Add Alakazam to party
+addPartyMember(149) // Add Dragonite to party
+console.log(game)
+
+//Exercise 6
+/*
+Exercise 6
+1. Set the `completed` property to true for gyms with a difficulty below 3.
+2. Think about how you'd loop through the `gyms` array to check and update the `completed` property.
+
+
+Solve Exercise 6 here:
+*/
+
+let gymsArray = game.gyms //isolate the gyms array
+// console.log(gymsArray)
+
+for(let index = 0; index < gymsArray.length; index++) { //go through the gyms array
+    // console.log(gymsArray[index])
+    let currentGym = gymsArray[index] //isolate a given gym
+    if(currentGym.difficulty <= 3) { //check if the gym difficulty is 3 or lower
+        // console.log(gymsArray[index]) 
+        currentGym.completed = true // complete the gym
+    }
+}
+
+console.log(`game state as of exercise 6: `, game)
+
+//Exercise 7
