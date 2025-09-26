@@ -339,12 +339,12 @@ This method should:
 Solve Exercise 14 here:
 */
 
-game.partyCount = function () {
-    return game.party.length
+game.partyCount = function () { // create function to count the number of Pokemon in the party
+    return game.party.length // return the count of Pokemon in the party
 }
 
-partyCount = game.partyCount()
-console.log(`\n\ne14 partyCount: `, partyCount)
+partyCount = game.partyCount() // create variable with the count of Pokemon in the party
+console.log(`\n\ne14 partyCount: `, partyCount) // e14 status
 
 //Exercise 15
 /*
@@ -355,8 +355,17 @@ Exercise 15
 Solve Exercise 15 here:
 */
 
-completeGymsByDifficulty(8) // complete gyms 'with a difficulty below 6'
+completeGymsByDifficulty(8) // complete gyms 'with a difficulty below 8, i.e. all gyms'
 console.log(`\n\nstate as of e15:\n`, game)
 
 
 //Exercise 16
+/*
+Exercise 16
+1. Log the entire `game` object to the console. Take a moment to review the changes you've made throughout the exercises.
+
+
+Solve Exercise 16 here:
+*/
+
+console.log(`\n\nstate as of e16:\n`, game)
