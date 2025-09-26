@@ -204,14 +204,16 @@ game.catchPokemon = function(pokemonObj) { // create the catchPokemon method in 
 
 }
 
-console.log(`\n\nstate as of e10:\n`)
+//DUPLICATE FUNCTIONALITY VS. EXERCISE 11
+// console.log(`\n\nstate as of e10:\n`)
 
-extractedPokemonObjGlobal = extractPokemonObj(150) // get the object for 150 Mewtwo
+// extractedPokemonObjGlobal = extractPokemonObj(150) // get the object for 150 Mewtwo
 // console.log(extractedPokemonObjGlobal)
-game.catchPokemon(extractedPokemonObjGlobal) // add 150 Mewtwo to the game party array
-console.log(game)
+// game.catchPokemon(extractedPokemonObjGlobal) // add 150 Mewtwo to the game party array
+// console.log(game)
 
 // game.catchPokemon(150)
+
 
 //Exercise 11
 /*
@@ -325,3 +327,23 @@ game.gymStatus() // call the gymStatus method to populate the gymTally object
 console.log('\n\ne13 gymTally results', gymTally) // View the resultant gymTally object 
 
 //Exercise 14
+/*
+Exercise 14
+1. Add a `partyCount` method to `game` that counts the number of Pokémon in your party.
+
+This method should:
+  - Not accept any arguments.
+  - Count the number of Pokemon in the party.
+  - return the found number of Pokemon in the party.
+
+Solve Exercise 14 here:
+*/
+
+game.partyCount = function () {
+    return game.party.length
+}
+
+partyCount = game.partyCount()
+console.log(`\n\ne14 partyCount: `, partyCount)
+
+//Exercise 15
