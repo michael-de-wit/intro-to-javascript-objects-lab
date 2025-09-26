@@ -358,7 +358,6 @@ Solve Exercise 15 here:
 completeGymsByDifficulty(8) // complete gyms 'with a difficulty below 8, i.e. all gyms'
 console.log(`\n\nstate as of e15:\n`, game)
 
-
 //Exercise 16
 /*
 Exercise 16
@@ -369,3 +368,17 @@ Solve Exercise 16 here:
 */
 
 console.log(`\n\nstate as of e16:\n`, game)
+
+//Exercise 17
+/*
+Exercise 17
+1. Arrange the Pokémon in `game.party` by their HP. The one with the highest HP should come first.
+2. You'll need to use the `.sort()` method. How does the compare function work in sorting numbers?
+
+
+Solve Exercise 17 here:
+*/
+game.party.sort((a, b) => b.hp - a.hp);
+
+
+console.log(game)
